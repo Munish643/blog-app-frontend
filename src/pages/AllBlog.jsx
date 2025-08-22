@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
-import BlogCard from "../components/blogCard";
+import BlogCard from "../components/BlogCard";
 
 const AllBlogs = function () {
   const [blogs, setBlogs] = useState([]);
