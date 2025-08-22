@@ -11,7 +11,7 @@ const HomePage = function () {
   useEffect(function () {
     async function fetchRecentBlogs() {
       try {
-        const response = await axios.get("http://localhost:8080/api/v1/blogs");
+        const response = await axios.get("https://blogapp-backend-1-gsf4.onrender.com/api/v1/blogs");
         setReacentBlog(response.data.slice(0, 4));
       } catch (error) {
         toast.error("Error fetching recent blog!!!");

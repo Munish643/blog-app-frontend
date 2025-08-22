@@ -29,7 +29,7 @@ const AddBlog = function () {
 
     try {
       setIsLoading(true);
-      axios.post("http://localhost:8080/api/v1/blogs", newBlog);
+      axios.post("https://blogapp-backend-1-gsf4.onrender.com/api/v1/blogs", newBlog);
       navigate("/blogs");
       toast("New blog added!!!!");
     } catch (error) {
