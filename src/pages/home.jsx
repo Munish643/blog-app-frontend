@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 // import { dummyBlogs } from "../data";
-import BlogCard from "../components/blogCard";
+import BlogCard from "../components/BlogCard";
 import { Link } from "react-router";
 import { toast } from "react-toastify";
 import axios from "axios";
@@ -16,7 +16,6 @@ const HomePage = function () {
       } catch (error) {
         toast.error("Error fetching recent blog!!!");
         console.log(error);
-        
       } finally {
         setIsLoading(false);
       }
@@ -27,12 +26,16 @@ const HomePage = function () {
     <main>
       {/*hero section  */}
       <section className="text-center py-16 bg-gradient-to-b from-red-700 to-purple-600 text-white rounded-lg mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 hover:text-amber-100 transition-hover cursor-auto
-        ">
+        <h1
+          className="text-4xl md:text-6xl font-bold mb-6 hover:text-amber-100 transition-hover cursor-auto
+        "
+        >
           Welcome to BlogApp
         </h1>
         <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Welcome to Go Code, your go-to place for tutorials, insights, and tips on web development, programming, and technology. Explore our latest posts and level up your skills.
+          Welcome to Go Code, your go-to place for tutorials, insights, and tips
+          on web development, programming, and technology. Explore our latest
+          posts and level up your skills.
         </p>
       </section>
       {/* recent blog section */}
